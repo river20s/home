@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+/* 공통 스타일 */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 2em;
+    font-size: 15px;
+    line-height: 1.5;
+    text-transform: lowercase;
+    font-family: 'Pretendard-SemiBold';
+  }  
+  /* 타이틀 스타일 */
+  #site-title {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+  }
+  #site-title:hover {
+    font-family: 'Pretendard-ExtraBold';
+  }
+  /* 사이드바 */
+  .sidebar {
+    font-family: 'Pretendard-SemiBold';
+    margin-top: 2.5rem;
+  } 
+  /* 메뉴 스타일 */
+  #home-menu a {
+    display: block;         
+    font-size: 1.5rem;      
+    font-weight: 600;
+    text-decoration: none;  /* 밑줄 제거 */
+    color: #000;
+    margin-bottom: 0.1rem;  /* 링크 간 간격 */
+  }
+  #home-menu a:hover {
+    font-family: 'Pretendard-ExtraBold';
+  }
+  
