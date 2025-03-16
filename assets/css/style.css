@@ -3,9 +3,11 @@
 /* General */
 body 
 {
-	font-family: Spoqa Han Sans Neo, TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
+	font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
 	font-size: 32px;
 	margin: 1%;
+	background-color: #000000;
+	color: #FFFFFF;
 }
 @media screen and (min-width: 300px) {
 	    body {
@@ -34,6 +36,15 @@ p
 }
 p + p {
   border-top: 1px solid black;
+}
+a {
+	color: #FFFFFF;
+	text-decoration: underline dotted #949494;
+}
+a:hover {
+	background-color: #ff7a7a;
+	color: #000000;
+	text-decoration: underline dotted #000000;
 }
 ul
 {
