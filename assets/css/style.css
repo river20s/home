@@ -1,99 +1,97 @@
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+/* General */
+body 
+{
+	font-family: Spoqa Han Sans Neo, TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
+	font-size: 32px;
+	margin: 1%;
 }
-@font-face {
-    font-family: 'Pretendard-SemiBold';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+@media screen and (min-width: 300px) {
+	    body {
+	        font-size: 20px;
+	    }
 }
-@font-face {
-    font-family: 'Pretendard-ExtraBold';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
-    font-weight: 800;
-    font-style: normal;
+@media screen and (min-width: 600px) {
+	    body {
+	        font-size: 24px;
+	    }
 }
-/* 공통 스타일 */
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    padding: 2em;
-    font-size: 15px;
-    line-height: 1.5;
-    text-transform: lowercase;
-    font-family: 'Pretendard-SemiBold';
-  }
-  
-  /*배경 동영상 */
-  .video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-  }
-
-  /*모든 배경 동영상 */
-  .bg-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: none;
-  }
-
-  /* 가로 landscape 요소 */
-  @media (orientation: landscape) {
-    .landscape {
-      display: block;
-    }
-  }
-
-  /* 세로 portrait 요소 */
-  @media (orientation: portrait) {
-    .portrait {
-      display: block;
-    }
-    
-  }
-
-  /* 타이틀 스타일 */
-  #site-title {
-    font-size: 1rem;
-    text-decoration: none;
-    color: #fff;
-    mix-blend-mode: difference; /* 색상 반전 */
-  }
-
-  #site-title:hover {
-    font-family: 'Pretendard-ExtraBold';
-  }
-
-  /* 사이드바 */
-  .sidebar {
-    font-family: 'Pretendard-SemiBold';
-    margin-top: 2.5rem;
-  } 
-
-  /* 메뉴 스타일 */
-  #home-menu a {
-    display: block;         
-    font-size: 1.5rem;      
-    font-weight: 600;
-    text-decoration: none;  /* 밑줄 제거 */
-    color: #fff;
-    mix-blend-mode: difference; /* 색상 반전 */
-    margin-bottom: 0.1rem;  /* 링크 간 간격 */
-  }
-  
-  #home-menu a:hover {
-    font-family: 'Pretendard-ExtraBold';
-  }
-  
+@media screen and (min-width: 1200px) {
+	    body {
+	        font-size: 28px;
+	    }
+}
+@media screen and (min-width: 1600px) {
+	    body {
+	        font-size: 32px;
+	    }
+}
+p 
+{
+	margin: 0px;
+  padding: 10px 0;
+}
+p + p {
+  border-top: 1px solid black;
+}
+ul
+{
+	margin: 0px;
+}
+li
+{
+	margin: 0px;
+}
+/* Logo */
+.fix_img
+{
+    	position:fixed; 
+    	bottom:1%; 
+    	right:1%; 
+    	width:15%;
+}
+.fix_txt
+{
+    	position:fixed;
+	bottom:1%; 
+    	right:1%;  
+	text-align: right;
+  	font-size: 6vw;
+}
+/* Images */
+img
+{	
+	max-width: 100%;
+	height: auto;
+}
+.thumbs img {
+	float: left;
+	padding: 0px,0px,0px,0px; 
+}
+/* IBM */
+.TXT {
+    clear: both;
+    .thumbs img {
+    	max-height: 150px;
+    	}
+}
+/* Print */
+@media print 
+{
+  	body {
+	font-size: 16px;
+  	}
+  	img
+	{	
+	max-width: 45%;
+	max-height: 45%;
+	}
+  	.thumbs img {
+    	max-height: 150px;
+    	}
+	.fix
+	{
+    	width:10%;
+	}
+}
